@@ -1,13 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+padding: 0;
+font-family: "poppins";
+background-color: #0915af;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+}
+
+form{
+  display: block;
+background-color: #fff;
+/* box-shadow: 1px 1px 3px 2px #ddd; */
+margin: 60px auto;
+max-width: 500px;
+max-height: 600px;
+padding: 20px 40px;
+border-radius: 3px;
+}
+.fosm{  
+max-width: 500px;
+max-height: 800px;
+}
+
+form input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px auto;
+  padding: 8px;
+  font-family: "poppins";
+  background-color: #f3f3f3;
+border: 1px solid #ddd;
+font-size: 18px;
+}
+
+form span{
+  color: palevioletred;
+}
+form button{
+  height: 50px;
+  width: 420px;
+  align-items: center;
+  border: none;
+  background-color:  #0915af;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.silo{
+  align-items: center;
+  font-weight: bolder;
+  font-size:35px;
+  justify-items: center;
+  padding-left: 115px;
+}
+.sil{
+  font-size: 22px;
+  font-weight: bold;
+}
+.fola{
+  margin-left: 273px;
 }
