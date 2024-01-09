@@ -35,6 +35,7 @@ form input{
   /* background-color: #f3f3f3; */
 border: 1px solid #ddd;
 font-size: 18px;
+border-radius: 6px;
 }
 
 form span{
@@ -48,7 +49,7 @@ form button{
   background-color:  #0915af;
   color: #fff;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .silo{
   align-items: center;
