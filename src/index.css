@@ -32,7 +32,7 @@ form input{
   margin: 15px auto;
   padding: 8px;
   font-family: "poppins";
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
 border: 1px solid #ddd;
 font-size: 18px;
 }
@@ -48,7 +48,7 @@ form button{
   background-color:  #0915af;
   color: #fff;
   cursor: pointer;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 .silo{
   align-items: center;
@@ -63,4 +63,16 @@ form button{
 }
 .fola{
   margin-left: 273px;
+}
+.folaa{
+  margin-left: 203px;
+}
+.cche{
+  display: flex;
+  flex-direction: row;
+  margin-right: 719px;
+}
+.cch{
+  display: flex;
+  flex-direction: row; 
 }

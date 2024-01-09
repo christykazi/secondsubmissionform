@@ -59,7 +59,7 @@ const Signup = () => {
 
 </div>
             <button type="submit">Submit</button>
-            <p className="fola">Forgot <span><a href="">password?</a></span></p>
+            <p className="folaa">Already registered <span><a href="/login">sign in?</a></span></p>
           
           </form>
       

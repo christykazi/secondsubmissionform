@@ -34,11 +34,10 @@ const Login = () => {
             required
           />
 </div>
-       <div>
-        <input type="checkbox" />Remeber me
-       </div>  
+
           <button type="submit">Send</button>
-        
+          <p className="fola">Forgot <span><a href="">password?</a></span></p>
+          
         </form>
     
     </div>
