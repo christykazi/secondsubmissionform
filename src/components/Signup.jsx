@@ -8,14 +8,14 @@ const Signup = () => {
     email: "",
     password: "",
      
-  })
+  })  
 
 const handleSubmit =(e) =>{
   e.preventDefault();
 const {fname, lname, email, password 
 } = state;
   console.log(fname, lname, email, password)
-  handleSubmit()
+  
 }
 
 
@@ -26,7 +26,7 @@ const {fname, lname, email, password
     return (
       <div className="mb-3">
         
-          <form onSubmit={this.handleSubmit} className="fosm">
+          <form onSubmit={handleSubmit} className="fosm">
 <div className="form-control">
 
 <h2 className="silo" >Sign Up </h2>
