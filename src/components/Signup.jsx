@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import emailjs from '@emailjs/browser';
 
 const Signup = () => {
-  const [formData,setFormData] = useState({
+  const [state,setState] = useState({
     fname: "",
     lname: "",
     email: "",
@@ -12,8 +12,8 @@ const Signup = () => {
 
 const handleSubmit =(e) =>{
   e.preventDefault();
-const {  fname, lname, email, password 
-} = formDate
+const {fname, lname, email, password 
+} = state;
   console.log(fname, lname, email, password)
   handleSubmit()
 }
@@ -37,7 +37,7 @@ const {  fname, lname, email, password
               className="form-control"
               placeholder="First Name"
               required
-              onChange={(e) => this.setState({fname: e.target.value})}
+              onChange={(e) => setState({...state, fname: e.target.value})}
             />
 
 </div>
@@ -50,7 +50,7 @@ const {  fname, lname, email, password
               name="name"
               className="form-control"
               placeholder="Last Name"            
-              onChange={(e) => this.setState({lname: e.target.value})}
+              onChange={(e) => setState({...state, lname: e.target.value})}
               required
             />
 
@@ -63,7 +63,7 @@ const {  fname, lname, email, password
               name="email"
               className="form-control"
               placeholder="Enter Email"
-              onChange={(e) => this.setState({email: e.target.value})}
+              onChange={(e) => setState({...state, email: e.target.value})}
               required
             />
 
@@ -77,7 +77,7 @@ const {  fname, lname, email, password
               name="password"
               className="form-control"
               placeholder="Enter Password" 
-  onChange={(e) => this.setState({password: e.target.value})}
+  onChange={(e) => setState({...state, password: e.target.value})}
               required
             />
 
