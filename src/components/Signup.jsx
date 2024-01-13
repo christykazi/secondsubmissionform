@@ -12,16 +12,21 @@ const Signup = () => {
 
 const handleSubmit =(e) =>{
   e.preventDefault();
+
+  
 const {fname, lname, email, password 
 } = state;
-  console.log(fname, lname, email, password)
-  fetch("http://localhost:7000/register", { 
+
+ /* for disappearing form */
+e.target.reset();
+
+  fetch("http://localhost:7002/register", { 
     method: "POST",
     crossDomain: true,
-    headers:{
+    headers: {
       "content-Type" : "application/json",
       Accept : "application/json",
-     "  Access-Control-Allow-Origin" : "*"
+  
     }, 
     body:JSON.stringify({
       fname,
@@ -29,11 +34,17 @@ const {fname, lname, email, password
       email,
       password,
     })
+    
 })
 .then((res) => res.json())
 .then((data) => {
   console.log(data, "userRegister")
+
+}) 
+.catch((error) => {
+  console.error("Error during fetch:", error);
 })
+
 }
 
 
@@ -51,7 +62,7 @@ const {fname, lname, email, password
             <label className="sil">First name</label>
             <input
               type="text"
-              name="name"
+              name="fname"
               className="form-control"
               placeholder="First Name"
               required
@@ -65,7 +76,7 @@ const {fname, lname, email, password
             <label className="sil">Last  name</label>
             <input
               type="text"
-              name="name"
+              name="lname"
               className="form-control"
               placeholder="Last Name"            
               onChange={(e) => setState({...state, lname: e.target.value})}
