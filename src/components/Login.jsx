@@ -34,7 +34,9 @@ const Login = () => {
             required
           />
 </div>
- <P><i>we are here for you</i></P>
+
+ 
+
           <button type="submit">Send</button>
           <p className="fola">Forgot <span><a href="/signup">password?</a></span></p>
           
