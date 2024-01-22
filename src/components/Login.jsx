@@ -30,7 +30,7 @@ const Login = () => {
           className="form-control"
             type="password"
             name="email"
-            placeholder="Enter passwod"
+            placeholder="Enter password"
             required
           />
 </div>
